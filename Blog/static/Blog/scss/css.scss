@@ -1,4 +1,29 @@
+$main_color_1:rgb(40, 43, 46);
+$main_color_2:rgb(197, 197, 197);
 *{margin: 0px; padding: 0px;}
+
+html, body {
+  height: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 header{
-    height: 15px;
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: $main_color_1;
+   
+}
+article{
+    flex: 1 0 auto;
+    background-color: $main_color_1;
+}
+footer{
+    flex: 0 0 auto;
+    height: 50px;
+    background-color: $main_color_1;
+    
 }
