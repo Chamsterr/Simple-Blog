@@ -5,7 +5,8 @@ from django.urls import path
 from . import views
 
 app_name = "Blog"
-urlpatterns = [
+urlpatterns = {
     # Домашняя страница
     path('', views.index, name='index'),
-]
+    path('', views.posts, name='posts')
+}

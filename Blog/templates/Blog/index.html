@@ -1,4 +1,14 @@
 {% extends "Blog/base.html" %}
+
 {% block content%}
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos, similique? A, distinctio dolore eveniet fugiat harum libero molestiae natus provident quae quaerat! Aperiam, at atque beatae delectus distinctio dolor doloribus eligendi esse illo itaque, laborum nam nihil non omnis placeat porro quaerat quasi quod sit unde veritatis vero, voluptate! A amet autem consectetur consequuntur debitis, ex expedita libero odit, optio sit, soluta temporibus unde veritatis. Consequuntur est optio tenetur?
 {% endblock content %}
+
+{% block aside%}
+    <ul class="nav_post">
+    {% for post in posts %}
+    <li><a href="">{{ post }}</a></li>
+    {% empty %}
+    <li>No posts have been added yet.</li>
+    {% endfor %}
+</ul>
+{% endblock aside%}
