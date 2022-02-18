@@ -50,6 +50,14 @@ footer {
 
 .nav_post {
   list-style-type: none;
-  text-align: center; }
+  text-align: center;
+  font-size: 28px; }
+
+.nav_link {
+  text-decoration: none;
+  display: block; }
+
+.nav_link:visited {
+  color: grey; }
 
 /*# sourceMappingURL=css.css.map */

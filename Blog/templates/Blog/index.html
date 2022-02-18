@@ -6,7 +6,7 @@
 {% block aside%}
     <ul class="nav_post">
     {% for post in posts %}
-    <li><a href="">{{ post }}</a></li>
+    <li><a href="" class="nav_link">{{ post.title }}</a> {{ post.text }}
     {% empty %}
     <li>No posts have been added yet.</li>
     {% endfor %}
