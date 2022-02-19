@@ -8,10 +8,17 @@
 <body>
     <section>
         <header>
-            Simple-Blog
         </header>
-        <aside>{% block aside%}{% endblock aside%}</aside>
-        <article>{% block content %}{% endblock content %}</article>
+        <aside>
+            <h1 class="logo"> Simple-Blog</h1>
+            {% block aside%}
+            {% endblock aside %}
+        </aside>
+        <article>
+            {% block content %}
+
+            {% endblock content %}
+        </article>
         <footer>ChamsterCorporation</footer>
     </section>
 </body>

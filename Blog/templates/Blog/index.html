@@ -1,14 +1,19 @@
 {% extends "Blog/base.html" %}
 
-{% block content%}
-{% endblock content %}
-
 {% block aside%}
+    <h3>What news?</h3>
     <ul class="nav_post">
     {% for post in posts %}
-    <li><a href="" class="nav_link">{{ post.title }}</a> {{ post.text }}
+        <li id="nav"><label for="nav"><a href="" class="nav_link" >{{ post.title }}</a> {{ post }}</label></li>
     {% empty %}
     <li>No posts have been added yet.</li>
     {% endfor %}
 </ul>
 {% endblock aside%}
+
+{% block content %}
+    <div class="greet">Добро пожаловать на Simple-Blog!1</div>
+    <div class="flex">
+        
+    </div>
+{% endblock content %}
