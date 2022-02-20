@@ -21,29 +21,32 @@ section {
 
 header {
   grid-area: header;
-  background: #dbccee;
+  background: #eeeeee;
   padding: 12px;
   border-bottom: 1px solid #303238;
   font-size: 30px; }
 
 article {
   grid-area: article;
-  background: #dbccee;
-  padding: 38px; }
+  background: #f9f9fa;
+  padding: 38px;
+  border-left: 1px solid #303238; }
 
 .greet {
   border: 1px solid #303238;
-  text-align: center; }
+  text-align: center;
+  padding: 12px;
+  background-color: #eeeeee;
+  border-radius: 4px; }
 
 aside {
   grid-area: nav;
-  background: #dbccee;
-  padding: 12px;
-  border-right: 1px solid #303238; }
+  background: #eeeeee;
+  padding: 12px; }
 
 footer {
   grid-area: footer;
-  background: #dbccee;
+  background: #eeeeee;
   padding: 12px;
   border-top: 1px solid #303238;
   text-align: center; }
@@ -54,20 +57,61 @@ footer {
   font-size: 28px; }
 
 .nav_link {
-  text-decoration: none;
-  display: block; }
+  text-decoration: none; }
 
 .nav_link:visited {
   color: grey; }
-
-li.nav {
-  @color == grey; }
 
 h3 {
   text-align: center;
   margin-bottom: 19px; }
 
-.flex {
-  display: flex; }
+.post {
+  display: block; }
+
+.create {
+  display: block;
+  margin: auto;
+  border-radius: 4px; }
+
+h2 {
+  margin-bottom: 12px; }
+
+.content {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #303238;
+  padding: 12px;
+  background-color: #eeeeee;
+  border-radius: 4px; }
+
+.title {
+  text-align: center; }
+
+.form_con {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 34px; }
+
+.title_f {
+  width: 100%;
+  font-size: 19px;
+  padding-left: 7px; }
+
+.text_f {
+  width: 98.5%;
+  height: 450px;
+  resize: none;
+  font-size: 19px;
+  padding: 10px;
+  margin-top: 15px; }
+
+.main-button {
+  display: block;
+  font-size: 17px;
+  border: solid 2px gray;
+  border-radius: 10px 10px;
+  padding: 3px;
+  margin: auto; }
 
 /*# sourceMappingURL=css.css.map */
