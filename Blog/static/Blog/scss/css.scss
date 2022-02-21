@@ -1,5 +1,6 @@
 $main_color_1:#f9f9fa;
-$main_color_2:#eeeeee;
+$main_color_2:#dadada;
+$main_color_3: #b8b8b8;
 $padding_for: 12px;
 $border: 1px solid #303238 ;
 // $box-shadow: 0 0 5px $main_color_2;
@@ -11,17 +12,19 @@ $border: 1px solid #303238 ;
 body, html {
     height: 100%;
     border-collapse: collapse;
+    font-family: "Source Sans Pro";
+    color: #000000;
 }
 
 .logo{
-    text-align: center;
+    padding-left: 18px;
     margin-bottom: 25%;
     font-size: large;
 }
 
 section {
     display: grid;
-    grid-template-areas: "nav header" "nav article " "nav footer";
+    grid-template-areas: "header header" "nav article " "footer footer";
     grid-template-columns: 150px 1fr;
     grid-template-rows: 5% 1fr 7%;
     margin: 0;
@@ -30,7 +33,7 @@ section {
     
 header {
     grid-area: header;
-    background: $main_color_2;
+    background: $main_color_3;
     padding: $padding_for;
     border-bottom: $border;
     // box-shadow: $box-shadow;
@@ -61,7 +64,7 @@ aside {
 }
 footer {
     grid-area: footer;
-    background: $main_color_2;
+    background: $main_color_3;
     padding: $padding_for;
     border-top: $border;
     text-align: center;
@@ -76,6 +79,7 @@ footer {
 
 .nav_link{
     text-decoration: none;
+    color: #303238;
 }
 .nav_link:visited{
 
@@ -88,8 +92,12 @@ h3{
 }
 .post{
     display: block;
+    color: #000000;
 }
 
+.new_post{
+    border-radius: 4px;
+}
 .create{
     display: block;
     margin: auto;
@@ -123,7 +131,7 @@ h2{
 }
 
 .text_f{
-    width: 98.5%;
+    width: 98%;
     height: 450px;
     resize: none;
     font-size: 19px;

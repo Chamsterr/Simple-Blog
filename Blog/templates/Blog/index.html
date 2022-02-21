@@ -6,7 +6,7 @@
 {% block content %}
     <div class="greet">
         <h2>Добро пожаловать на Simple-Blog!1</h2>
-        <button class="create">Создать пост</button>
+        <button class="new_post"><a href="{% url 'Blog:create_post' %}" class="nav_link">Создать пост</a></button>
     </div>
     <div class="flex">
         {% for post in posts %}

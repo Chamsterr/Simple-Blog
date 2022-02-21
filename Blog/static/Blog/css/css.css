@@ -4,16 +4,18 @@
 
 body, html {
   height: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  font-family: "Source Sans Pro";
+  color: #000000; }
 
 .logo {
-  text-align: center;
+  padding-left: 18px;
   margin-bottom: 25%;
   font-size: large; }
 
 section {
   display: grid;
-  grid-template-areas: "nav header" "nav article " "nav footer";
+  grid-template-areas: "header header" "nav article " "footer footer";
   grid-template-columns: 150px 1fr;
   grid-template-rows: 5% 1fr 7%;
   margin: 0;
@@ -21,7 +23,7 @@ section {
 
 header {
   grid-area: header;
-  background: #eeeeee;
+  background: #b8b8b8;
   padding: 12px;
   border-bottom: 1px solid #303238;
   font-size: 30px; }
@@ -36,17 +38,17 @@ article {
   border: 1px solid #303238;
   text-align: center;
   padding: 12px;
-  background-color: #eeeeee;
+  background-color: #dadada;
   border-radius: 4px; }
 
 aside {
   grid-area: nav;
-  background: #eeeeee;
+  background: #dadada;
   padding: 12px; }
 
 footer {
   grid-area: footer;
-  background: #eeeeee;
+  background: #b8b8b8;
   padding: 12px;
   border-top: 1px solid #303238;
   text-align: center; }
@@ -57,7 +59,8 @@ footer {
   font-size: 28px; }
 
 .nav_link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #303238; }
 
 .nav_link:visited {
   color: grey; }
@@ -67,7 +70,11 @@ h3 {
   margin-bottom: 19px; }
 
 .post {
-  display: block; }
+  display: block;
+  color: #000000; }
+
+.new_post {
+  border-radius: 4px; }
 
 .create {
   display: block;
@@ -82,7 +89,7 @@ h2 {
   margin-bottom: 2%;
   border: 1px solid #303238;
   padding: 12px;
-  background-color: #eeeeee;
+  background-color: #dadada;
   border-radius: 4px; }
 
 .title {
@@ -99,7 +106,7 @@ h2 {
   padding-left: 7px; }
 
 .text_f {
-  width: 98.5%;
+  width: 98%;
   height: 450px;
   resize: none;
   font-size: 19px;

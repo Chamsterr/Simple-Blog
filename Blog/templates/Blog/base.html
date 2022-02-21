@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../static/Blog/css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>{% block title %}{% endblock title%}</title>
 </head>
 <body>
     <section>
         <header>
+            <h1 class="logo"> Simple-Blog</h1>
         </header>
         <aside>
-            <h1 class="logo"> Simple-Blog</h1>
             {% block aside%}
             {% endblock aside %}
         </aside>

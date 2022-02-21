@@ -5,8 +5,12 @@
         <h2 class="title">New post</h2>
         <form action="{% url 'Blog:create_post'%}" method="post">
             {% csrf_token %}
-            <input class="title_f" placeholder="Heading" required type="text" name="title">
-            <textarea placeholder="Write something ..."  class="text_f" required name="text" ></textarea>
+            {{ for.title.label_tag }}
+            {{ form.title }}
+<!--            <input class="title_f" placeholder="Heading" required type="text" name="title">-->
+            {{ for.text.label_tag }}
+            {{ form.text }}
+<!--            <textarea placeholder="Write something ..."  class="text_f" required name="text" ></textarea>-->
             <button type="submit" class="main-button">Submit</button>
         </form>
     </div>
