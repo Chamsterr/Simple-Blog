@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views import generic
 
 from Blog .models import BlogPost
 from .forms import BlogForm
@@ -10,6 +11,14 @@ def posts(request):
     posts = BlogPost.objects.all().order_by('-date_added')
     context = {'posts': posts}
     return render(request, 'Blog/index.html', context)
+
+
+def post(request, post_id):
+    """Выводит одну тему и все ее записи"""
+    posts = BlogPost.objects.get(id=post_id)
+    topic = BlogPost.objects.get(id=post_id)
+    context = {'topic': topic, 'posts': posts}
+    return render(request, 'Blog/post.html', context)
 
 
 def create_post(request):
@@ -24,3 +33,4 @@ def create_post(request):
 
     context = {'form': form}
     return render(request, 'Blog/create_post.html', context)
+

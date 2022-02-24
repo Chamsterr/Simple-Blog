@@ -62,19 +62,18 @@ footer {
   text-decoration: none;
   color: #303238; }
 
-.nav_link:visited {
-  color: grey; }
-
 h3 {
   text-align: center;
   margin-bottom: 19px; }
 
 .post {
   display: block;
-  color: #000000; }
+  color: #000000;
+  font-size: 25px; }
 
 .new_post {
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding: 2.5px; }
 
 .create {
   display: block;

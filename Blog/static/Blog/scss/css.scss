@@ -81,10 +81,10 @@ footer {
     text-decoration: none;
     color: #303238;
 }
-.nav_link:visited{
+// .nav_link:visited{
 
-    color: grey;
-}
+//     color: grey;
+// }
 
 h3{
     text-align: center;
@@ -93,10 +93,12 @@ h3{
 .post{
     display: block;
     color: #000000;
+    font-size: 25px;
 }
 
 .new_post{
     border-radius: 4px;
+    padding: 2.5px;
 }
 .create{
     display: block;
@@ -113,6 +115,9 @@ h2{
     padding: $padding_for;
     background-color: $main_color_2;
     border-radius: 4px;
+}
+.date_added{
+
 }
 
 .title{

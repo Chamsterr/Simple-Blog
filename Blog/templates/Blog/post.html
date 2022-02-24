@@ -1,0 +1,6 @@
+{% extends "Blog/base.html" %}
+{% block content %}
+    <h1>{{ posts.title }}</h1>
+    <h5 class="date_added">{{ topic.date_added|date:'M d, Y  H:i'}}</h5>
+    <p> {{ posts.text }} </p>
+{% endblock content %}Ы
