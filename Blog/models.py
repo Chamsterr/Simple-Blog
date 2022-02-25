@@ -11,9 +11,3 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return f"{self.text[:550]}..." if len(self.text[:]) > 550 else f"{self.text[:550]}"
-
-
-# class Post(models.Model):
-#     """Страница отдельной темы"""
-#     title = models.ForeignKey(title, )
-#     context = {'posts': posts}

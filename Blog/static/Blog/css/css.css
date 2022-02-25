@@ -10,7 +10,6 @@ body, html {
 
 .logo {
   padding-left: 18px;
-  margin-bottom: 25%;
   font-size: large; }
 
 section {
@@ -119,5 +118,14 @@ h2 {
   border-radius: 10px 10px;
   padding: 3px;
   margin: auto; }
+
+.post_title {
+  font-size: 50px; }
+
+.post_text {
+  font-size: 25px; }
+
+.date_added {
+  font-size: 20px; }
 
 /*# sourceMappingURL=css.css.map */
