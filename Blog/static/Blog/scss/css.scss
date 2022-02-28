@@ -117,10 +117,6 @@ h2{
     background-color: $main_color_2;
     border-radius: 4px;
 }
-.date_added{
-
-}
-
 .title{
     text-align: center;
 }
@@ -163,4 +159,15 @@ h2{
 }
 .date_added{
     font-size: 20px;
+}
+
+nav{
+    line-height: 24px;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.nav_2{
+    margin-top: 35px;
 }
