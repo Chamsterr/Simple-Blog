@@ -1,7 +1,10 @@
 {% extends "Blog/base.html" %}
 {% block content %}
-    <a href="{% url 'Blog:edit_post' post.id %}">Edit</a>
+    {% if request.user == post.owner %}
+        <a href="{% url 'Blog:edit_post' post.id %}">Edit</a>
+    {% endif %}
     <h1 class="post_title">{{ post.title }}</h1>
     <h5 class="date_added">{{ post.date_added|date:'M d, Y  H:i'}}</h5>
     <p class="post_text"> {{ post.text }} </p>
+    <p class="author"> {{ post.owner }} </p>
 {% endblock content %}

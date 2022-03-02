@@ -14,6 +14,7 @@
             <h1 class="post"><a href="{% url 'Blog:post' post.id %}" class="nav_link" >{{ post.title }}</a></h1>
             <h5 class="date_added">{{ post.date_added|date:'M d, Y  H:i'}}</h5>
             <p> {{ post }} </p>
+            <p class="author"> {{ post.owner }}</p>
         </div>
         {% empty %}
         <p>No posts have been added yet.</p>
